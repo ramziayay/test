@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        ::selection{
+            color: yellow;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body onkeydown="run_key(event) ;">
+    <img src="wallpaperflare.com_wallpaper (7).jpg"
+    onmouseover="o2(this)"
+    onmouseout="o1(this)"
+width="250" alt="image">
+
+<h1>exemple 2</h1>
+
+
+<h1 id="vv" ></h1>
+<h1>exemple 3</h1>
+<p oncopy="copy()">هذا النص سيتم نصخهه</p>
+<h1>exemple 4</h1>
+<h3>fi hada mital ki nataka 3LA 2 ystad3I amr tiba3 wa rah nasta3mal amr onkeydown fi body bah n3yat function li dirha wa lirani katabha b ism run_key</h3>
+<h1>exemple 5</h1>   
+<select name="" id="color" onchange="chang()">
+    <option value="white">white</option>
+    <option value="red">red</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+</select>
+    
+    <h1>exemple 6</h1>
+    username: <input type="text" id="text">
+ <button type=" submit" onclick="go ()">login</button>
+ <hr>
+ <h4 id="hh"></h4>
+
+    
+    
+    <script>
+        function go(){
+        var text = document.getElementById("text").value;
+        if (text == 'kr') {
+            window.hh.innerHTML= text+" "+"<span style='color:green ;'> welcome</span>";
+        }else{
+            window.hh.innerHTML=text+" "+" <span style=' color:red ;' >rong</span> ";
+         }
+     }
+
+
+
+
+
+//onchange=""  ///hadi bah tbadal
+function chang(){
+    document.body.style.backgroundColor = document.getElementById("color").value
+}
+
+        function run_key(event){
+            if(event.key==2){
+                window.print();
+                //wa ta9dar that ay fi3l a5ar kima alert
+            }
+            if(event.key==1){
+                alert("hi,hello")
+            }
+        }
+        function copy(){
+            alert("بنجاح, هذا النص تم نصخه")
+        }
+        //setTimeout(alfi3l ,10000) ////1000=1s
+        
+        setTimeout(function () {
+            window.vv.innerHTML +=("مرخبا انا رمزس");
+        },5000);
+               
+         function o1 (img) {
+            img.style.opacity= '0.5' ;
+            //css الشفافية -->opacity
+         }
+         function o2 (img){ 
+            img.style.opacity= '1' ;
+         }
+         /*css
+               ::selection{} ---> mohadid ta3 nosos
+         */
+  
+        </script>
+
+</body>
+</html>
